@@ -3,6 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Note from './Note';
 import CreateArea from './CreateArea';
+import Form from './Form';
 
 function App() {
 
@@ -22,12 +23,14 @@ function App() {
         });
     }
 
-    
+    let loggedIn = true;
 
     return (
         <div>
             <Header />
-            <CreateArea onAdd={createNote} />
+            {!loggedIn ? <Form /> : <CreateArea onAdd={createNote} />}
+            {/* <Form />
+            <CreateArea onAdd={createNote} /> */}
             {notes.map((noteItem, index) => {
                 return <Note
                     key={index}
