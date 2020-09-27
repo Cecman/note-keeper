@@ -7,7 +7,6 @@ function Form() {
         username: "",
         password: ""
     });
-    const [isLoggedIn, setLoggedIn] = useState(false);
 
     const handleChange = evt => {
         const { fieldName, value } = evt.target;
@@ -23,7 +22,7 @@ function Form() {
     return (
         <div>
             <form className="loginForm">
-                <Input onChange={handleChange} type="text" placeholder="Username" name="uName" value={loginInfo.username} />
+                <Input onChange={handleChange} type="text" placeholder="Username" name="username" value={loginInfo.username} />
                 <Input onChange={handleChange} type="password" placeholder="Password" name="password" value={loginInfo.password} />
                 <button>Login</button>
             </form>

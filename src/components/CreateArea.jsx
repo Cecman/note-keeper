@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Input from './Input';
 import AddIcon from '@material-ui/icons/Add';
 import Fab from '@material-ui/core/Fab';
 import Zoom from '@material-ui/core/Zoom';
@@ -42,7 +43,7 @@ function CreateArea(props) {
     return (
         <div>
             <form className="create-note">
-                {isExpanded && <input onChange={handleChange} name="title" placeholder="Note title..." value={note.title} />}
+                {isExpanded && <Input onChange={handleChange} name="title" placeholder="Note title..." value={note.title} />}
                 <textarea onClick={handleExpand} onChange={handleChange} name="content" placeholder="Note content.." value={note.content} rows={isExpanded ? 3 : 1} />
                 <Zoom in={isExpanded}>
                     <Fab onClick={submitNote}>

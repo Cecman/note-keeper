@@ -8,9 +8,10 @@ function Header() {
 
     return (
         <header>
-            <h1 className="main-title"><EventNoteIcon fontSize="25"/>Note Keeper</h1>
+            <EventNoteIcon className="note-icon" />
+            <h1 className="main-title">Note Keeper</h1>
             <Time />
-            <Avatar />
+            <Avatar />  {/*placeholder img*/}
         </header>
     );
 }

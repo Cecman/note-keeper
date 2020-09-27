@@ -14,7 +14,7 @@ function App() {
             return [...prevValue, note]
         });
     }
-    //use setState function to loop through the previous state ofthe array and return everything that does not equal the id
+    
     const deleteNote = id => {
         setNotes(prevNotes => {
             return prevNotes.filter((noteItem, index) => {
@@ -23,14 +23,12 @@ function App() {
         });
     }
 
-    let loggedIn = true;
+    let loggedIn = true; //to this check against database
 
     return (
         <div>
             <Header />
             {!loggedIn ? <Form /> : <CreateArea onAdd={createNote} />}
-            {/* <Form />
-            <CreateArea onAdd={createNote} /> */}
             {notes.map((noteItem, index) => {
                 return <Note
                     key={index}
