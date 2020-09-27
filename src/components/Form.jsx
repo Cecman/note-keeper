@@ -11,12 +11,12 @@ function Form(props) {
     const [isUser, setIsUser] = useState(true);
 
     const handleChange = evt => {
-        const { fieldName, value } = evt.target;
+        const { name, value } = evt.target;
 
         setLoginInfo(prevValue => {
             return {
                 ...prevValue,
-                [fieldName]: value
+                [name]: value
             }
         });
     }
