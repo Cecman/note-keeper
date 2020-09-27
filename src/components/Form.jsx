@@ -27,6 +27,10 @@ function Form(props) {
         } else {
             setIsUser(true);
         }
+        setLoginInfo({
+            username: "",
+            password: ""
+        });
     }
 
 
