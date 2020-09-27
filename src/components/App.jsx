@@ -23,12 +23,12 @@ function App() {
         });
     }
 
-    let loggedIn = true; //to this check against database
+    let loggedIn = false; //to this check against database
 
     return (
         <div>
             <Header />
-            {!loggedIn ? <Form /> : <CreateArea onAdd={createNote} />}
+            {!loggedIn ? <Form isLoggedIn={loggedIn}/> : <CreateArea onAdd={createNote} />}
             {notes.map((noteItem, index) => {
                 return <Note
                     key={index}

@@ -167,3 +167,18 @@ form.loginForm button {
   font-size: 18px;
 }
 
+form.loginForm button:hover {
+  cursor: pointer;
+  background-color: #05959c;
+  color: #fff;
+}
+
+.sign-up-par {
+  font-size: small;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: underline;
+  padding-top: 10px;
+}
+
