@@ -5,7 +5,9 @@ function Form(props) {
 
     const [loginInfo, setLoginInfo] = useState({
         username: "",
-        password: ""
+        email: "",
+        password: "",
+        confPas: ""
     });
 
     const [isUser, setIsUser] = useState(true);
