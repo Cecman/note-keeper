@@ -35,7 +35,6 @@ function Form(props) {
         });
     }
 
-
     return (
         <div>
             <form className="loginForm">
