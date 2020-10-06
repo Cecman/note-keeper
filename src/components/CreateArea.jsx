@@ -21,7 +21,7 @@ function CreateArea(props) {
 
     const handleChange = evt => {
         const { name, value } = evt.target;
-        
+
         setNote(prevValue => {
             return {
                 ...prevValue,
