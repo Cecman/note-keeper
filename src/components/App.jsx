@@ -14,7 +14,7 @@ function App() {
             return [...prevValue, note]
         });
     }
-    
+
     const deleteNote = id => {
         setNotes(prevNotes => {
             return prevNotes.filter((noteItem, index) => {
@@ -28,7 +28,7 @@ function App() {
     return (
         <div>
             <Header />
-            {!loggedIn ? <Form isLoggedIn={loggedIn}/> : <CreateArea onAdd={createNote} />}
+            {!loggedIn ? <Form isLoggedIn={loggedIn} /> : <CreateArea onAdd={createNote} />}
             {notes.map((noteItem, index) => {
                 return <Note
                     key={index}
