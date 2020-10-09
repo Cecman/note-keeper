@@ -23,7 +23,7 @@ function App() {
         });
     }
 
-    let loggedIn = false; //to this check against database
+    let loggedIn = false; //to check this against database
 
     return (
         <div>
