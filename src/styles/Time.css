@@ -1,0 +1,11 @@
+.time {
+  color: #fff;
+  font-family: 'McLaren', cursive;
+  font-weight: 200;
+  font-size: x-large;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  bottom: 25px;
+}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './../styles/Form.css';
 import Input from './Input';
 
 function Form(props) {
@@ -37,7 +38,7 @@ function Form(props) {
 
     return (
         <div>
-            <form className="loginForm">
+            <form className="loginForm" method='POST'>
                 <Input onChange={handleChange} type="text" placeholder="Username" name="username" value={loginInfo.username} />
                 {!props.isLoggedIn && !isUser ? <Input onChange={handleChange} type="text" placeholder="Email" name="email" /> : null}
                 <Input onChange={handleChange} type="password" placeholder="Password" name="password" value={loginInfo.password} />

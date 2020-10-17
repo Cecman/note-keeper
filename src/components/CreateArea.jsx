@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import './../styles/CreateArea.css';
 import Input from './Input';
 import AddIcon from '@material-ui/icons/Add';
 import Fab from '@material-ui/core/Fab';
@@ -39,6 +40,10 @@ function CreateArea(props) {
         });
         evt.preventDefault();
     }
+
+    useEffect(() => {
+        console.log('Rendered');
+    }, [isExpanded]);
 
     return (
         <div>

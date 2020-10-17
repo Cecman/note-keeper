@@ -1,4 +1,5 @@
 import React from 'react';
+import './../styles/Note.css';
 import DeleteIcon from '@material-ui/icons/Delete';
 
 function Note(props) {

@@ -1,0 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  background: #393e46;
+  padding: 0 16px;
+  background-image: url('https://www.transparenttextures.com/patterns/notebook-dark.png');
+}

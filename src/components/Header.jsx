@@ -1,4 +1,5 @@
 import React from 'react';
+import './../styles/Header.css';
 import Avatar from './Avatar';
 import Time from './Time';
 import EventNoteIcon from '@material-ui/icons/EventNote';
