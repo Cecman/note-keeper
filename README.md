@@ -1,6 +1,7 @@
 # note-keeper
-A simple web-app for keeping notes
 Inspired by Google's "Keep" app.
+A simple web-app for keeping notes
+
 
 TODO
 
